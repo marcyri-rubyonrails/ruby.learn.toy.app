@@ -4,13 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem "rails", "6.0.3.2"
 gem "puma", "4.3.5"
 gem "sass-rails", "6.0.0"
-gem "uglifier", "3.2.0"
-gem "coffee-rails", "4.2.2"
-gem "jquery-rails", "4.3.1"
 gem "webpacker", "4.2.2"
 gem "turbolinks", "5.2.1"
 gem "jbuilder", "2.10.0"
 gem "bootsnap", "1.4.6", require: false
+gem "uglifier", "3.2.0"
+gem "coffee-rails", "4.2.2"
+gem "jquery-rails", "4.3.1"
 
 group :development, :test do
   gem "sqlite3", "1.4.2"
@@ -32,6 +32,7 @@ end
 
 group :production do
   gem "pg", "1.2.3"
+  gem "rails_12factor", "0.0.2"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
